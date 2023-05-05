@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Home</title>  
+
+    </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1106.0" data-gr-ext-installed="">
+<div class="banner">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="menu-container2">
+<div class="button2">
+<h1>Typhoon Ompong</h1>
+</div></div>	
+<div class="menu-container3">
+  <div class="button3">
+  
+  <p>By Group 4 | Updated April 23, 2023</p>
+  </div></div>	
+
+  <div class="topleft">Group 4</div>
+
+<div class="callout">
+    <div class="callout-header">Attention!</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="callout-container">
+      <p>If you have any concern please <a href="team.html" style=text-decoration:none;>email us</a>!!</p>
+    </div>
+  </div>
+
+</h1></div>
+
+      <link rel="stylesheet" href="style1.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      
+   </head>
+   <body>
+      <div class="menu-container">
+         <div class="button">
+            Menu
+            <span class="fas fa-bars"></span>
+         </div>
+         <ul>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="about.html">About Typhoon Ompong</a></li>
+            <li><a href="brainstorming.html">Brainstorming Techniques</a></li>
+            <li><a href="team.html">Meet our Team</a></li>
+            <li><a href="sources.html">Sources</a></li>
+        </ul>
+      </div>
+      <script>
+         $(document).ready(function(){
+           $('.button').click(function(){
+             if($(this).hasClass('expand')){
+               $('ul').slideUp(function(){
+                 $('.button').removeClass('expand');
+                 $('.fas').removeClass('expand')
+               });
+             }else{
+               $(this).addClass('expand');
+               setTimeout(function(){
+                 $('.fas').addClass('expand');
+                 $('ul').stop().slideDown();
+               },200);
+             }
+           });
+         });
+      </script>
+   </body>
+</html>
